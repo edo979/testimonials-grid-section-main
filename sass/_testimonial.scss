@@ -1,0 +1,47 @@
+.testimonial {
+  padding: 2.3rem;
+  border-radius: 10px;
+
+  & > * + * {
+    margin-top: 1rem;
+  }
+
+  &.quote {
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  & .flex {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  & img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+
+  & .name,
+  & .position {
+    line-height: 1.2;
+  }
+
+  & .position {
+    opacity: 0.5;
+  }
+
+  & p:last-child {
+    opacity: 0.7;
+  }
+}
+
+.bg-primary {
+  background-color: $Moderate-violet;
+}
+
+.border-primary {
+  border: 2px solid mix($Moderate-violet, white, 70%);
+}
