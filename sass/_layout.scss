@@ -1,7 +1,8 @@
-@use 'vars' as *;
+html {
+  font-size: 13px;
+}
 
 body {
-  font-family: $font-family;
   background-color: $Light-grayish-blue;
 }
 

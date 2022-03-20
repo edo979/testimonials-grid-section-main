@@ -12,9 +12,15 @@ $White: hsl(0, 0%, 100%);
 $Light-gray: hsl(0, 0%, 81%);
 $Light-grayish-blue: hsl(210, 46%, 95%);
 
-// Fonts
+// Typography
 
-$font-family: 'Barlow Semi Condensed', sans-serif;
+$font-family-primary: 'Barlow Semi Condensed', sans-serif;
+$fw-400: 400;
+$fw-700: 600;
+
+$fs-300: 0.6875rem;
+$fs-400: 0.8125rem;
+$fs-500: 1.25rem;
 
 // Breaking points
 

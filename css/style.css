@@ -68,8 +68,22 @@ select {
     scroll-behavior: auto !important;
   }
 }
-body {
+h1,
+h2,
+p {
   font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
   background-color: #ecf2f8;
 }
 
