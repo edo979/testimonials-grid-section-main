@@ -92,7 +92,7 @@ p {
 }
 
 .lead {
-  font-size: 1.45rem;
+  font-size: 1.525rem;
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: 0.55px;
@@ -129,11 +129,13 @@ body {
   display: grid;
   place-content: center;
   gap: 2rem;
+  grid-template: "one" "two" "three" "four" "five"/1fr;
 }
 
 .testimonial {
-  padding: max(2.35rem, 5vw);
+  padding: 2rem;
   border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
 }
 .testimonial > * + * {
   margin-top: 1rem;
@@ -199,15 +201,22 @@ body {
 }
 
 @media (min-width: 600px) {
+  body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+
   .testimonial-grid {
-    width: max(90%, 998px);
+    width: max(90%, 590px);
+    margin-block: 0;
     grid-template: "one one" "two three" "four four" "five five"/1fr 1fr;
   }
 }
 @media (min-width: 1024px) {
   .testimonial-grid {
-    max-width: 1440px;
-    grid-template: "one one two five" "three four four five"/repeat(4, 1fr);
+    width: min(90%, 1110px);
+    grid-template: "one one two five" "three four four five"/1fr 1fr 1fr 1fr;
   }
 }
 

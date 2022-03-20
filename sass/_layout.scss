@@ -14,13 +14,26 @@ body {
   display: grid;
   place-content: center;
   gap: 2rem;
+  grid-template:
+    'one'
+    'two'
+    'three'
+    'four'
+    'five' / 1fr;
 }
 
 @import 'testimonial';
 
 @include mq($break-point-md) {
+  body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+
   .testimonial-grid {
-    width: max(90%, 998px);
+    width: max(90%, 590px);
+    margin-block: 0;
     grid-template:
       'one one'
       'two three'
@@ -31,11 +44,10 @@ body {
 
 @include mq($break-point-lg) {
   .testimonial-grid {
-    max-width: 1440px;
+    width: min(90%, 1110px);
     grid-template:
       'one one two five'
       'three four four five'
-      / repeat(4, 1fr);
-    //grid-auto-columns: 1fr;
+      / 1fr 1fr 1fr 1fr;
   }
 }
