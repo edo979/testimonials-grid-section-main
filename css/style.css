@@ -209,14 +209,20 @@ body {
 
   .testimonial-grid {
     width: max(90%, 590px);
-    margin-block: 0;
     grid-template: "one one" "two three" "four four" "five five"/1fr 1fr;
   }
 }
 @media (min-width: 1024px) {
   .testimonial-grid {
     width: min(90%, 1110px);
+    margin-block: 0;
     grid-template: "one one two five" "three four four five"/1fr 1fr 1fr 1fr;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
   }
 }
 

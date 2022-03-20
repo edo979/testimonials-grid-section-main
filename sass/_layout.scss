@@ -33,7 +33,6 @@ body {
 
   .testimonial-grid {
     width: max(90%, 590px);
-    margin-block: 0;
     grid-template:
       'one one'
       'two three'
@@ -45,9 +44,16 @@ body {
 @include mq($break-point-lg) {
   .testimonial-grid {
     width: min(90%, 1110px);
+    margin-block: 0;
     grid-template:
       'one one two five'
       'three four four five'
       / 1fr 1fr 1fr 1fr;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
   }
 }
