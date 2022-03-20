@@ -8,6 +8,7 @@ p {
 
 h2 {
   font-size: 1.05rem;
+  font-weight: 400;
 }
 
 p {
@@ -16,6 +17,10 @@ p {
 
 .fs-300 {
   font-size: 0.9275rem;
+}
+
+.fw-700 {
+  font-weight: 600;
 }
 
 .lead {
@@ -38,5 +43,5 @@ p {
 }
 
 .text-secondary {
-  color: $Very-dark-blackish-blue;
+  color: $Very-dark-grayish-blue;
 }

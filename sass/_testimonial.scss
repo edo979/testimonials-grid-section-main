@@ -1,5 +1,5 @@
 .testimonial {
-  padding: 2.3rem;
+  padding: 2.35rem;
   border-radius: 10px;
 
   & > * + * {
@@ -19,14 +19,14 @@
   }
 
   & img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
     border-radius: 50%;
   }
 
   & .name,
   & .position {
-    line-height: 1.2;
+    line-height: 1.155;
   }
 
   & .position {
@@ -40,6 +40,18 @@
 
 .bg-primary {
   background-color: $Moderate-violet;
+}
+
+.bg-secondary-400 {
+  background-color: $Very-dark-grayish-blue;
+}
+
+.bg-secondary-600 {
+  background-color: $Very-dark-blackish-blue;
+}
+
+.bg-neutral-100 {
+  background-color: $White;
 }
 
 .border-primary {

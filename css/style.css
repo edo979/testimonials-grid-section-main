@@ -76,6 +76,7 @@ p {
 
 h2 {
   font-size: 1.05rem;
+  font-weight: 400;
 }
 
 p {
@@ -84,6 +85,10 @@ p {
 
 .fs-300 {
   font-size: 0.9275rem;
+}
+
+.fw-700 {
+  font-weight: 600;
 }
 
 .lead {
@@ -106,7 +111,7 @@ p {
 }
 
 .text-secondary {
-  color: #19212e;
+  color: #48556a;
 }
 
 html {
@@ -124,7 +129,7 @@ body {
 }
 
 .testimonial {
-  padding: 2.3rem;
+  padding: 2.35rem;
   border-radius: 10px;
 }
 .testimonial > * + * {
@@ -141,12 +146,12 @@ body {
   gap: 1.2rem;
 }
 .testimonial img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
   border-radius: 50%;
 }
 .testimonial .name, .testimonial .position {
-  line-height: 1.2;
+  line-height: 1.155;
 }
 .testimonial .position {
   opacity: 0.5;
@@ -157,6 +162,18 @@ body {
 
 .bg-primary {
   background-color: #7541c8;
+}
+
+.bg-secondary-400 {
+  background-color: #48556a;
+}
+
+.bg-secondary-600 {
+  background-color: #19212e;
+}
+
+.bg-neutral-100 {
+  background-color: white;
 }
 
 .border-primary {
