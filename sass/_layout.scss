@@ -10,6 +10,32 @@ body {
   width: max(70%, 325px);
   margin-inline: auto;
   margin-block: 50px;
+
+  display: grid;
+  place-content: center;
+  gap: 2rem;
 }
 
 @import 'testimonial';
+
+@include mq($break-point-md) {
+  .testimonial-grid {
+    width: max(90%, 998px);
+    grid-template:
+      'one one'
+      'two three'
+      'four four'
+      'five five' / 1fr 1fr;
+  }
+}
+
+@include mq($break-point-lg) {
+  .testimonial-grid {
+    max-width: 1440px;
+    grid-template:
+      'one one two five'
+      'three four four five'
+      / repeat(4, 1fr);
+    //grid-auto-columns: 1fr;
+  }
+}

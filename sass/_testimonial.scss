@@ -1,5 +1,5 @@
 .testimonial {
-  padding: 2.35rem;
+  padding: max(2.35rem, 5vw);
   border-radius: 10px;
 
   & > * + * {
@@ -35,6 +35,22 @@
 
   & p:last-child {
     opacity: 0.7;
+  }
+
+  &:nth-child(1) {
+    grid-area: one;
+  }
+  &:nth-child(2) {
+    grid-area: two;
+  }
+  &:nth-child(3) {
+    grid-area: three;
+  }
+  &:nth-child(4) {
+    grid-area: four;
+  }
+  &:nth-child(5) {
+    grid-area: five;
   }
 }
 
