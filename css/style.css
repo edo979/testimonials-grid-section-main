@@ -73,4 +73,10 @@ body {
   background-color: #ecf2f8;
 }
 
+.testimonial-grid {
+  width: max(70%, 325px);
+  margin-inline: auto;
+  margin-block: 50px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -4,3 +4,9 @@ body {
   font-family: $font-family;
   background-color: $Light-grayish-blue;
 }
+
+.testimonial-grid {
+  width: max(70%, 325px);
+  margin-inline: auto;
+  margin-block: 50px;
+}
